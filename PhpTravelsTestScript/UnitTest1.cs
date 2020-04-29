@@ -323,6 +323,11 @@ namespace PhpTravelsTestScript
             //click on suppliers list 
             driver.FindElement(By.XPath("//*[@id='main-menu']/ul/li[3]/div/ul/li[7]/a")).Click();
             Thread.Sleep(3000);
+
+            // Minimized the window
+            driver.Manage().Window.Minimize();
+            Thread.Sleep(3000);
+
             // Quite the driver
             driver.Quit();
         }
