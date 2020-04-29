@@ -217,6 +217,13 @@ namespace PhpTravelsTestScript
             driver.FindElement(By.XPath("//*[@id='main-menu']/ul/li[3]/div/ul/li[5]/a")).Click();
             Thread.Sleep(3000);
 
+            // Click on contact 
+            driver.FindElement(By.XPath("//*[@id='Main']/section[1]/div[1]/div/div/div[2]/a")).Click();
+            Thread.Sleep(3000);
+
+            // Go back
+            driver.Navigate().Back();
+            Thread.Sleep(3000);
             // Quite the driver
             driver.Quit();
         }
